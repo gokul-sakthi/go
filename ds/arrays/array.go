@@ -38,6 +38,11 @@ func (a Array) ToString() string {
 			builder.WriteString(",")
 		}
 	}
-	builder.WriteString("]")
+	builder.WriteString("]\n")
 	return builder.String()
+}
+
+func (a Array) Clear() *Array {
+	clear(a)
+	return &a
 }

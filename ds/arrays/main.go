@@ -21,6 +21,9 @@ func main() {
 	if err != nil {
 		fmt.Println(err.Error())
 	} else {
-		fmt.Printf("Array at %v is %v", 1, item)
+		fmt.Printf("Array at %v is %v\n", 1, item)
 	}
+
+	arr = arr.Clear()
+	arr.ToString()
 }
